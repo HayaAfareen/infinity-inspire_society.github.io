@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Inspire Society</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .counter-animate {
+            animation: countUp 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold text-blue-900 tracking-tight">INFINITY INSPIRE</span>
+                <span class="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-full font-semibold">SOCIETY</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-600">
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#impact" class="hover:text-blue-600 transition">Our Impact</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                <a href="#testimonials" class="hover:text-blue-600 transition">Stories</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#volunteer" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-lg font-semibold shadow-md transition">Join Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-950 text-white py-24 md:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Inspiring the Next Generation of Scholars & Leaders
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
+                Driven by students and alumni from premier institutions including IBA, LUMS, GIKI, and international universities. We bridge educational gaps through dedicated mentorship and outreach.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#volunteer" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3.5 rounded-lg font-semibold text-lg shadow-lg transition">Become a Volunteer</a>
+                <a href="#projects" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3.5 rounded-lg font-semibold text-lg transition">Explore Outreach</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Text Left | Image Right Layout) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Left -->
+                <div>
+                    <span class="text-blue-600 font-bold uppercase tracking-wider text-sm">Who We Are</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">Connecting Ambitious Minds Across Borders</h2>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Infinity Inspire Society is an educational outreach initiative bringing together high-achieving mentors from top national institutions like LUMS, IBA, and GIKI alongside global scholars.
+                    </p>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        We conduct university guidance sessions, financial aid awareness drives, and skill workshops in underserved regions to help students navigate higher education pathways.
+                    </p>
+                    <div class="mt-6 flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="text-blue-600"></i>
+                            <span class="font-medium text-gray-700">Mentorship</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="check-circle-2" class="text-blue-600"></i>
+                            <span class="font-medium text-gray-700">Financial Support Awareness</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image Right -->
+                <div class="relative">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.08 PM (2).jpeg" alt="Infinity Inspire Team" class="rounded-2xl shadow-xl w-full object-cover aspect-4/3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section (Animated Counter Concept) -->
+    <section id="impact" class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-extrabold text-blue-300 mb-2">1,500+</div>
+                    <div class="text-sm md:text-base text-blue-100 font-medium">Students Mentored</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-extrabold text-blue-300 mb-2">15+</div>
+                    <div class="text-sm md:text-base text-blue-100 font-medium">Outreach Drives</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-extrabold text-blue-300 mb-2">50+</div>
+                    <div class="text-sm md:text-base text-blue-100 font-medium">Active Mentors</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-extrabold text-blue-300 mb-2">10+</div>
+                    <div class="text-sm md:text-base text-blue-100 font-medium">Partner Universities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Cards Layout) -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-sm">Key Initiatives</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">Our Outreach & Campaigns</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: LUMS NOP Outreach -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.05 PM.jpeg" alt="LUMS NOP Collaboration" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold bg-blue-100 text-blue-700 px-2.5 py-1 rounded">Collaborative Drive</span>
+                        <h3 class="text-xl font-bold mt-3 text-gray-900">LUMS NOP Session in Mariabad</h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Organized in collaboration with the National Outreach Programme (NOP) Center, LUMS, guiding students in Mariabad on fully-funded scholarship applications.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Financial Aid Awareness -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.08 PM.jpeg" alt="Financial Aid Drive" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded">Guidance Work</span>
+                        <h3 class="text-xl font-bold mt-3 text-gray-900">Financial Aid & Scholarship Drives</h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Detailed walk-throughs of financial aid options available at IBA, LUMS, GIKI, and public sector universities for deserving students.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Interactive Mentorship -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.08 PM (1).jpeg" alt="Interactive Mentorship" class="h-48 w-full object-cover">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold bg-purple-100 text-purple-700 px-2.5 py-1 rounded">Mentorship</span>
+                        <h3 class="text-xl font-bold mt-3 text-gray-900">Interactive Student Workshops</h3>
+                        <p class="mt-2 text-gray-600 text-sm">
+                            Direct Q&A sessions where university mentors advise students on entrance exam preparation and soft skills development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-sm">Photo Gallery</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">Outreach in Action</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.07 PM.jpeg" alt="Outreach Classroom" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.06 PM (1).jpeg" alt="Diverse Student Body Presentation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.05 PM (2).jpeg" alt="NOP Information Presentation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.05 PM (1).jpeg" alt="Faculty & Scholarship Session" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.04 PM (2).jpeg" alt="Presentation Hall" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-sm hover:shadow-md transition">
+                    <img src="WhatsApp Image 2026-08-05 at 8.21.04 PM (1).jpeg" alt="Mariabad Session Presentation" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider text-sm">Testimonials</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">What Students & Mentors Say</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 italic mb-6">"The session by Infinity Inspire Society helped me understand how financial aid programs like LUMS NOP work. Having mentors from IBA and LUMS explain everything made the process feel achievable."</p>
+                    <div class="font-bold text-gray-900">Session Attendee</div>
+                    <div class="text-sm text-gray-500">Mariabad Outreach Session</div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <p class="text-gray-600 italic mb-6">"Volunteering with Infinity Inspire gives us a platform to guide talented students who lack information about top universities in Pakistan and abroad."</p>
+                    <div class="font-bold text-gray-900">Volunteer Mentor</div>
+                    <div class="text-sm text-gray-500">LUMS / GIKI Volunteer Team</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join as Volunteer (CTA + Form) -->
+    <section id="volunteer" class="py-20 bg-blue-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Infinity Inspire Society</h2>
+                <p class="text-blue-100 max-w-xl mx-auto">Become a mentor or volunteer to help students across Pakistan reach their academic potential.</p>
+            </div>
+            
+            <form class="bg-white text-gray-800 p-8 rounded-2xl shadow-xl space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Full Name</label>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Email Address</label>
+                        <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">University / Institution</label>
+                        <input type="text" placeholder="e.g. LUMS, IBA, GIKI" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Role of Interest</label>
+                        <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <option>Student Mentor</option>
+                            <option>Outreach Coordinator</option>
+                            <option>Event Organizer</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold mb-2">Why do you want to join?</label>
+                    <textarea rows="4" placeholder="Briefly describe your motivation..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-lg shadow-md transition">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <span class="text-xl font-bold text-white">Infinity Inspire Society</span>
+                <p class="text-sm mt-1">Empowering students through education and leadership.</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Outreach</a>
+                <a href="#volunteer" class="hover:text-white transition">Volunteer</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
